@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#E8040404"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/headingTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="STOPWATCH"
+        android:textColor="#FF00FF"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:fontFamily="sans-serif-condensed" />
+
+    <ImageView
+        android:id="@+id/ImageView"
+        android:layout_width="381dp"
+        android:layout_height="438dp"
+        android:layout_below="@id/headingTextView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="Image"
+        android:src="@drawable/timeframe" />
+
+    <TextView
+        android:id="@+id/timerTextView"
+        android:layout_width="269dp"
+        android:layout_height="114dp"
+
+        android:layout_below="@id/headingTextView"
+        android:layout_alignTop="@id/ImageView"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="176dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="00:00:00"
+        android:textColor="@color/white"
+        android:textSize="42sp" />
+
+    <LinearLayout
+        android:id="@+id/buttonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginBottom="107dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="#F823CA4D"
+            android:onClick="Start"
+            android:text="Start"
+            android:textColor="#FFFFFF"
+            android:textColorLink="#800BD3"
+            android:textSize="18sp"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#EC1212"
+            android:onClick="Stop"
+            android:text="Stop"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:background="#FFA500"
+            android:onClick="Reset"
+            android:text="Reset"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</RelativeLayout>
